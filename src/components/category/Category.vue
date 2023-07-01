@@ -13,7 +13,7 @@ const path = defineProps({ mdiArrowRightThin });
     <div class="row">
       <div class="col-md-12">
         <div class="mb-4 d-flex">
-          <div class="me-auto">
+          <div class="me-auto text-white">
             <h5>Categories</h5>
             <div class="lines"></div>
           </div>

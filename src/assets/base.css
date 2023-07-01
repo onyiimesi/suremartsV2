@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@ html {
 }
 body {
     margin: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Open Sans', sans-serif !important;
     line-height: 1.5;
     letter-spacing: 0.1rem;
     box-sizing: border-box;
@@ -24,8 +23,8 @@ body {
     --bg-panel: #434343;
     --color-headings: #fff;
     --colors-headings: #000;
-    --color-text: #000;
-    --colors-text: #000;
+    --color-text: #0e0e0e;
+    --colors-text: #0e0e0e;
     --col-text: #f5f5f5;
     --color-main: #16a9d6;
   }
@@ -61,6 +60,7 @@ p{
 a{
     text-decoration: none;
     color: var(--color-text);
+    font-weight: 500;
 }
 
 header{
@@ -74,8 +74,25 @@ header .search form{
     margin: 5px 0;
 }
 
-.news{
+.lines {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-text);
+}
+
+.btns{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 0;
     background-color: var(--color-main);
+    color: var(--color-headings);
+    border-radius: 5px;
+}
+
+.news{
+    background-color: var(--colors-text);
     padding: 5px 0;
     color: var(--col-text);
 }
@@ -156,7 +173,8 @@ header .search form{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: linear-gradient(322deg, #1561ad , rgba(186, 74, 255, 0) 70%), linear-gradient(178deg, #16a9d6, rgba(0, 138, 255, 0) 70%), linear-gradient(24deg, #16a9d6 , rgba(0, 255, 198, 0) 35%);
+    /* background: linear-gradient(322deg, #0e0e0e , rgba(186, 74, 255, 0) 70%), linear-gradient(178deg, #0e0e0e, rgba(0, 138, 255, 0) 70%), linear-gradient(24deg, #0e0e0e , rgba(0, 255, 198, 0) 35%); */
+    background-color: var(--color-text);
     padding: 50px 0;
 }
 
@@ -173,7 +191,6 @@ header .search form{
     height: 100%;
     padding: 10px;
     border: 1px solid rgba(255, 255, 255, 0.6);
-    
     backdrop-filter: blur(2px);
     border-radius: 0.5rem;
     box-shadow: 0px calc(var(--size) / 6) calc(var(--size) / 3) rgba(0, 0, 0, 0.1);
@@ -284,6 +301,265 @@ header .search form{
     font-size: 0.8rem;
     color: var(--color-text);
 }
+
+
+.products {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: var(--color-headings);
+}
+
+.products .lines {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-text);
+}
+
+.products .prod_img{
+    height: 146px;
+    margin: 0 0 10px 0;
+}
+
+.products .location {
+    font-size: 0.7rem !important;
+    margin: 0 0 10px 0;
+}
+
+/* .products .location .iconsize{
+    font-size: 0.2rem !important;
+} */
+
+.products .btt{
+    margin: 20px 0 0 0;
+}
+
+/* .products .btt button{
+    width: 50px;
+    height: 40px;
+    padding: 5px;
+    border: 0;
+    background-color: var(--color-main);
+    color: var(--color-headings);
+    border-radius: 5px;
+} */
+
+.products .btt span{
+    font-size: 0.6rem;
+    padding: 10px 0 0 0;
+    font-weight: 500;
+}
+
+.product{
+    padding: 20px 15px;
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+    border: 1px solid #f5f5f5;
+    background-color: var(--color-headings);
+    position: relative;
+    
+}
+
+.product:hover{
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.product h5{
+    font-size: 1.1rem;
+}
+
+.product h6{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+.product s{
+    font-size: 0.7rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.product .discount{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: var(--color-main);
+    padding: 2px 3px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+
+
+.adverts {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: var(--col-text);
+}
+
+
+.fashion{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: var(--color-headings);
+}
+
+.fashion .fashions{
+    margin: 20px 0;
+}
+
+
+.art{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: var(--col-text);
+}
+
+
+.art .product{
+    padding: 20px 15px;
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+    border: 1px solid #f5f5f5;
+    background-color: #f2f2f2;
+    position: relative;
+    
+}
+
+.art .fashions{
+    margin: 20px 0;
+}
+
+
+.beauty{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: var(--color-headings);
+}
+
+
+.beauty .product{
+    padding: 20px 15px;
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+    border: 1px solid #f5f5f5;
+    position: relative;
+    
+}
+
+.beauty .fashions{
+    margin: 20px 0;
+}
+
+
+.footer{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: var(--color-text);
+}
+
+.footer .foot h5{
+    color: var(--color-headings);
+    font-size: 0.8rem;
+    padding:  0 0 10px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .foot ul{
+    margin: 0;
+    padding: 0;
+}
+
+.footer .foot ul li{
+    list-style: none;
+    padding: 0 0 8px 0;
+}
+
+.footer .foot ul li a{
+    color: var(--color-headings);
+    font-size: 0.7rem;
+}
+.footer .foot ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.place_holder{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background-color: var(--color-main);
+    margin: 0 auto;
+}
+
+.place_holder .place_name h3{
+    color: var(--color-headings);
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+}
+
+.contact_us{
+    padding: 50px 0;
+}
+
+.help_center{
+    padding: 50px 0;
+}
+
+.help_center .box{
+    background-color: var(--color-main);
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+.help_center .box h6{
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    color: var(--color-headings);
+}
+
+.help_center .boxx img{
+    width: 100px;
+    height: 100px;
+    margin: 0 0 8px 0;
+}
+
+.help_center label{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.help_center .help_text{
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+    word-spacing: .1rem;
+    letter-spacing: .0rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
